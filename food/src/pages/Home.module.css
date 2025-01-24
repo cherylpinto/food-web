@@ -1,0 +1,46 @@
+.container{
+  padding: 20px 30px;
+  padding-bottom: 200px;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;    
+  background: white;
+}
+@media (max-width: 768px) {
+    .container{
+    padding: 20px 12px;
+    }
+  }
+section{
+    max-width: 1400px;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.imgSection{
+    width: 100%;
+    max-width: 1200px;
+}
+.title {
+    font-size: 28px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center; 
+}
+@media (max-width: 760px) {
+    .cardWrapper{
+    gap: 16px;
+    }
+  }
+  

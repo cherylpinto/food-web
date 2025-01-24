@@ -1,0 +1,128 @@
+.container{
+    padding: 20px 30px;
+    padding-bottom: 200px;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: #FFFFFF;
+}
+@media (max-width: 768px) {
+    .container{
+    padding: 20px 16px;
+    }
+  }
+.wrapper{
+    width: 100%;
+    flex: 1;
+    max-width: 1400px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+    .wrapper{
+    flex-direction: column;
+    gap: 32px;
+    }
+  }
+.imageWrapper{
+    flex: 0.7;
+    display: flex;
+    justify-content: center;
+}
+
+.details{
+    flex: 1;
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    padding: 4px 10px;
+}
+.img{
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .img{
+    max-width: 400px;
+    height: 400px;
+    }
+}
+.title{
+    font-size: 28px;
+    font-weight: 600;
+    color: #404040;
+}
+.d{
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #404040;
+}
+.span{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(177, 178, 179, 0.6); 
+    text-decoration: line-through;
+    text-decoration-color: rgba(177, 178, 179, 0.5); 
+}
+.percent{
+    font-size: 16px;
+    font-weight: 500;
+    color: green;
+}
+.ingredients{
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.item{
+    background: #EB002920; /* Adds 20% opacity to the primary color */
+    color: #EB0029;
+    font-size: 14px;
+    padding: 4px 12px;
+    display: flex;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+
+}
+.buttonWrapper{
+    display: flex;
+    gap: 16px;
+    padding: 32px 0px;
+}
+@media only screen and (max-width: 700px) {
+    .buttonWrapper{
+    gap: 12px;
+    padding: 12px 0px;
+    }
+}
+
+.FavoriteRounded{
+    font-size: 22px;
+    color: red;
+}
+.FavoriteBorderOutlined{
+    font-size: 22px;
+}

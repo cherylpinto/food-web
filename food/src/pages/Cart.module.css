@@ -1,0 +1,147 @@
+.container{
+    padding: 20px 30px;
+    padding-bottom: 200px;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;    
+    background: white;
+  }
+@media (max-width: 768px) {
+    .container{
+      padding: 20px 12px;
+      }
+}
+section{
+      max-width: 1400px;
+      padding: 32px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+}
+.title {
+      font-size: 28px;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.wrapper{
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    padding: 12px;
+}
+@media (max-width: 750px) {
+    .wrapper{
+    flex-direction: column;
+    }
+}
+
+.left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+@media (max-width: 750px) {
+    .left{
+    flex: 1.2;
+    }
+  }
+  .table {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 22px;
+  }
+  .tableRow {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr auto; /* Matches header layout */
+    gap: 20px;
+    align-items: center; /* Align items in each row */
+}
+.tableItem{
+    flex: 1;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.counter{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border: 1px solid #4d4c4c;
+    border-radius: 8px;
+    padding: 4px 12px;
+}
+.product{
+    display: flex;
+    gap: 16px;
+}
+.img{
+    height: 80px;
+}
+.details{
+    max-width: 150px;
+}
+@media (max-width: 700px) {
+    .details{
+    max-width: 60px;
+    }
+  }
+.productTitle{
+    color:#EB0029;
+    font-size: 16px;
+    font-weight: 500;
+}
+.productDescp{
+    font-size: 14px;
+    font-weight: 400;
+    color: #404040;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.productSize{
+    font-size: 14px;
+    font-weight: 500;
+}
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+@media (max-width: 750px) {
+    .right{
+    flex: 0.8;
+    }
+}
+.subTotal{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.delivery{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+}
+.tableItems{
+    flex: 1;
+    font-weight: 500;
+    font-size: 18px;
+    color: #404040;
+}
+.tableDeleteOutline{
+    color:red;
+}

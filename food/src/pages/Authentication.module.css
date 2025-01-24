@@ -1,0 +1,86 @@
+.authContainer {
+    display: flex;
+    height: 100%;
+    background:white;
+  }
+  
+ .left {
+    flex: 1;
+    position: relative;
+  }
+  
+ .left img.logo {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    z-index: 10;
+  }
+  
+  .left img.auth_image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .right {
+    position: relative;
+    flex: 0.9;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 2px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #404040 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .closeButton:hover {
+    background: rgba(235,235,235, 1.5);
+  }
+  
+  .text {
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    text-align: center;
+    color: #4d4c4c;
+    margin-top: 16px;
+  }
+  
+  .textButton {
+    color: #404040;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .left {
+      display: none;
+    }
+    .right {
+      flex: 1;
+    }
+  }
+  
+  /*@media screen and (max-width: 400px) {
+    .text {
+      font-size: 14px;
+    }
+  }
+   */
