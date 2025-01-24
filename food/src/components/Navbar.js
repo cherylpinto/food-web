@@ -90,7 +90,6 @@
               </>
             ) : (
             <div style={{display:'flex', gap:"12px"}}>
-              <Button text="Sign Up" outlined small  onClick={()=>setOpenAuth(true)}  />
               <Button text="Sign In" small onClick={()=>setOpenAuth(true)} />
             </div>
             )}
